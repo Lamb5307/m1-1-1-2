@@ -1,0 +1,39 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+<link rel="stylesheet" href="style.css">
+<TITLE>基数</TITLE>
+</HEAD>
+<BODY>
+<h1>【　基数　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+10進数では、下の桁から上の桁へ10倍ずつ桁が上がりますが、2進数では数値が2倍ずつ上がるときに桁が上がります。この桁が上がる数(10進数では10、2進数では2)を<p class="di"><strong>｢基数｣</strong></p>といい、桁上がりした個所の数値は、すべて基数のべき乗で表現できます。2^0、2^1などべき乗で示した数値の各桁の<p class="di"><strong>｢重み｣</strong></p>といい、小数点以下の数値も基数の重みを使って表現できます。<br>
+
+<script>
+    const buttom = document.getElementById('buttom');
+    const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+
+    // マウスホバー時
+    buttom.addEventListener('mouseover', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '1';
+        });
+    }, false);
+
+    // マウスが離れている時
+    buttom.addEventListener('mouseleave', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '0';
+        });
+    }, false);
+</script>
+
+
+<P><IMG src="1-1-1-2.jpg" width="500" border="0"></P>
+</BODY>
+</HTML>
